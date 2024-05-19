@@ -1,0 +1,197 @@
+/* @font-face {
+  font-family: "21026";
+  src: url(../public/Donpoligrafbum.otf); 
+} */
+
+@font-face {
+  font-family: "montserrat";
+  src: url(../public/Montserrat-VariableFont_wght.ttf); 
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../public/Roboto-Bold.ttf); 
+}
+
+
+body {
+  margin: 0;
+  font-family: "montserrat";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content {
+  min-height: calc(100vh - 261px - 64px);
+}
+
+.blue-back {
+  background-color: #64A8D1;
+}
+
+.background {
+  background-image: url("../public/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar-fixed {
+  z-index: 1;
+}
+
+.nav-wrapper {
+  width: 70%;
+}
+
+.brand-logo {
+  /* font-family: "21026"; */
+  font-family: "montserrat";
+}
+
+.mont-font {
+  font-family: "montserrat";
+}
+
+.margin-bottom {
+  padding-bottom: 0.5rem;
+}
+
+.sides {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.card {
+  max-width: 220px;
+  min-height: 400px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card-image {
+  min-height:220px;
+}
+
+.card-content {
+  min-height: 115px;
+}
+
+.goods {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  justify-content: space-between;
+}
+
+.cart {
+  cursor: pointer;
+  border-radius: 5%;
+  z-index: 5;
+  color: white;
+}
+
+.cart-icon {
+  position: fixed;
+  right: 17%;
+  top: 2.5%;
+  z-index: 6;
+}
+
+.basket-list {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 50rem;
+  max-width: 95%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  animation: show 200ms ease-in-out;
+}
+
+.basket-clear {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 10px;
+  /* color: white; */
+  color: #64A8D1;
+}
+
+.secondary-content {
+  cursor: pointer;
+}
+
+#toast-container {
+  top: 3rem !important;
+  animation: fade-in 250ms ease-in-out;
+  -webkit-animation: fade-in 250ms ease-in-out;
+}
+
+.collection-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection .collection-item.active {
+  background-color: #0030a4;
+}
+
+.quantity-change {
+  width: 50%;
+  display: flex;
+}
+
+.quantity {
+  margin: 0 5% 0 5%;
+}
+
+.item-name {
+  width: 30%;
+}
+
+.basket-quantity {
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.btn {
+  background-color: #0030a4;
+}
+
+.btn:hover {
+  background-color: #417aff;
+}
+
+@keyframes show {
+  from {
+    top: 60%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(2rem);
+    opacity: 0;
+    -webkit-transform: translateY(2rem);
+    -moz-transform: translateY(2rem);
+    -ms-transform: translateY(2rem);
+    -o-transform: translateY(2rem);
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+    -moz-transform: translateY(0rem);
+    -ms-transform: translateY(0rem);
+    -o-transform: translateY(0rem);
+  }  
+}
